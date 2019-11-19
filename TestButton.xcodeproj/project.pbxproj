@@ -13,6 +13,10 @@
 		C31CD7582383F60E00684C1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31CD7562383F60E00684C1A /* Main.storyboard */; };
 		C31CD75A2383F61200684C1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31CD7592383F61200684C1A /* Assets.xcassets */; };
 		C31CD75D2383F61200684C1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31CD75B2383F61200684C1A /* LaunchScreen.storyboard */; };
+		C31CD7662383FA0400684C1A /* ExtendableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD7652383FA0400684C1A /* ExtendableButton.swift */; };
+		C31CD7682383FA7E00684C1A /* ExtendableButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31CD7672383FA7E00684C1A /* ExtendableButton.xib */; };
+		C36381E523844A4100C055A7 /* ScrollViewWithLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36381E423844A4100C055A7 /* ScrollViewWithLabelViewController.swift */; };
+		C36381E823844D7E00C055A7 /* ScrollViewWithDynamicInnerSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36381E723844D7E00C055A7 /* ScrollViewWithDynamicInnerSizes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		C31CD7592383F61200684C1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C31CD75C2383F61200684C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C31CD75E2383F61200684C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C31CD7652383FA0400684C1A /* ExtendableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendableButton.swift; sourceTree = "<group>"; };
+		C31CD7672383FA7E00684C1A /* ExtendableButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExtendableButton.xib; sourceTree = "<group>"; };
+		C36381E423844A4100C055A7 /* ScrollViewWithLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewWithLabelViewController.swift; sourceTree = "<group>"; };
+		C36381E723844D7E00C055A7 /* ScrollViewWithDynamicInnerSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewWithDynamicInnerSizes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		C31CD74F2383F60E00684C1A /* TestButton */ = {
 			isa = PBXGroup;
 			children = (
+				C36381E623844D5800C055A7 /* Controllers */,
+				C31CD7642383F63400684C1A /* ExtendableButton */,
 				C31CD7502383F60E00684C1A /* AppDelegate.swift */,
 				C31CD7522383F60E00684C1A /* SceneDelegate.swift */,
-				C31CD7542383F60E00684C1A /* ViewController.swift */,
 				C31CD7562383F60E00684C1A /* Main.storyboard */,
 				C31CD7592383F61200684C1A /* Assets.xcassets */,
 				C31CD75B2383F61200684C1A /* LaunchScreen.storyboard */,
 				C31CD75E2383F61200684C1A /* Info.plist */,
 			);
 			path = TestButton;
+			sourceTree = "<group>";
+		};
+		C31CD7642383F63400684C1A /* ExtendableButton */ = {
+			isa = PBXGroup;
+			children = (
+				C31CD7652383FA0400684C1A /* ExtendableButton.swift */,
+				C31CD7672383FA7E00684C1A /* ExtendableButton.xib */,
+			);
+			path = ExtendableButton;
+			sourceTree = "<group>";
+		};
+		C36381E623844D5800C055A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C31CD7542383F60E00684C1A /* ViewController.swift */,
+				C36381E423844A4100C055A7 /* ScrollViewWithLabelViewController.swift */,
+				C36381E723844D7E00C055A7 /* ScrollViewWithDynamicInnerSizes.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C31CD75D2383F61200684C1A /* LaunchScreen.storyboard in Resources */,
+				C31CD7682383FA7E00684C1A /* ExtendableButton.xib in Resources */,
 				C31CD75A2383F61200684C1A /* Assets.xcassets in Resources */,
 				C31CD7582383F60E00684C1A /* Main.storyboard in Resources */,
 			);
@@ -139,8 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C31CD7552383F60E00684C1A /* ViewController.swift in Sources */,
+				C31CD7662383FA0400684C1A /* ExtendableButton.swift in Sources */,
 				C31CD7512383F60E00684C1A /* AppDelegate.swift in Sources */,
+				C36381E823844D7E00C055A7 /* ScrollViewWithDynamicInnerSizes.swift in Sources */,
 				C31CD7532383F60E00684C1A /* SceneDelegate.swift in Sources */,
+				C36381E523844A4100C055A7 /* ScrollViewWithLabelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
